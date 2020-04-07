@@ -2,9 +2,11 @@
 (By Ranja Bati Sen (ranjabatisen), Mayura Nene (nenemayura) and Roopana Vuppalapati Chenchu (Roopana))
 
 Objective : 
+
 To design a system where multiple clients can post articles, read a list of articles, choose an article to see its content and reply to an existing article. There will be multiple servers with a coordinator server. 3 kinds of consistencies will be implemented : Sequential consistency, Quorum consistency and Read-your-Write consistency.
 
 Design:
+
 Main components involved: 
 1. Client
 
