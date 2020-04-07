@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+   <head>
+        <title>Bulletin Board</title>
+        <style>
+            body {
+                background-image: url('source.gif');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+                font-weight: bold;
+            }
+            .center {
+                margin: auto;
+                width: 60%;
+                padding: 10px;
+                line-height: 200%;
+            }
+            .a {
+                border: 3px solid #73AD21;
+            }
+            .b {
+                border: 3px solid #73AD21;
+            }
+            .c {
+                border: 3px solid #73AD21;
+            }
+            .d {
+                border: 3px solid #73AD21;
+            }
+        </style>
+   </head>
+   <body>
+        <div class="center">
+            <form action = "clientuiconnectorservlet" method = "POST">
+                <font color="red">ENTER PORT TO CONNECT WITH CLIENT SERVER</font><br>
+                <input type="text" name="port" value="1234"><br />
+                <font color="red">SELECT A TYPE OF CONSISTENCY</font><br>
+                <select name="consistency">
+                    <option value = "Sequential_consistency">Sequential consistency</option>
+                    <option value = "Quorum_consistency">Quorum consistency</option>
+                    <option value = "RW_consistency">Read your write consistency</option>
+                </select><br>
+                <font color="red">SELECT ANY ONE OPTION</font>
+                <div class="a">
+                    <input type="radio" id="post" name="option" value="post">
+                    <label for="post">1. Post</label><br>
+                    Enter article content &nbsp; <input type="text" name="article_content"><br />
+                </div>
+                <div class="b">
+                    <input type="radio" id="read" name="option" value="read">
+                    <label for="read">2. Read</label><br>
+                </div>
+                <div class="c">
+                    <input type="radio" id="choose" name="option" value="choose">
+                    <label for="choose">3. Choose</label><br>
+                    Enter article id &nbsp; <input type="text" name="choose_article_id"><br />
+                </div>
+                <div class="d">
+                    <input type="radio" id="reply" name="option" value="reply">
+                    <label for="reply">3. Reply</label><br>
+                    Enter article id &nbsp; <input type="text" name="reply_article_id"><br />
+                    Enter article content &nbsp; <input type="text" name="reply_article_content"><br />
+                </div>
+                <input type = "image" src="submit.gif" alt = "Submit" width="90" height="90" />
+            </form>
+        </div>
+   </body>
+</html>
