@@ -7,10 +7,14 @@ To design a system where multiple clients can post articles, read a list of arti
 Design:
 Main components involved: 
 1. Client
+
       Client UI (class Name: ClientUIConnectorServlet)
+      
       Client (class Name: ClientExecutor)
 2. Server 
+
       Coordinator Server (class Name: CoordinatorServer)
+      
       Server (class Name: ServerExecutor)
       
 Protocols used : TCP and UDP
