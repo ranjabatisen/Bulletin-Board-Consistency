@@ -8,7 +8,7 @@ Design:
 Main components involved: 
 1. Client
 
-      Client UI (class Name: ClientUIConnectorServlet)
+      &nbsp;Client UI (class Name: ClientUIConnectorServlet)
       
       Client (class Name: ClientExecutor)
 2. Server 
